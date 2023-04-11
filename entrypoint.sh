@@ -6,7 +6,7 @@ IFS='
 '
 for command in $1
 do
-  $command
+  echo $command
 done
 
 echo "time=$time" >> $GITHUB_OUTPUT
