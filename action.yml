@@ -3,8 +3,7 @@ description: 'Runs DBT on Snowflake.'
 inputs:
   command:  # id of input
     description: 'DBT commands to execute'
-    required: false
-    default: 'dbt build'
+    required: true
   project_folder:
     description: 'DBT project folder'
     required: false
