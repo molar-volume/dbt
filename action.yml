@@ -3,8 +3,12 @@ description: 'Runs DBT on Snowflake.'
 inputs:
   command:  # id of input
     description: 'DBT commands to execute'
-    required: true
+    required: false
     default: 'dbt build'
+  project_folder:
+    description: 'DBT project folder'
+    required: false
+    default: '.'
 outputs:
   logs: # id of output
     description: 'Logs from DBT job execution.'
@@ -13,3 +17,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.command }}
+    - ${{ inputs.project_folder }}
