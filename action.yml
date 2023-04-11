@@ -1,15 +1,15 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'dbt-snowflake'
+description: 'Runs DBT on Snowflake.'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  command:  # id of input
+    description: 'DBT commands to execute'
     required: true
-    default: 'World'
+    default: 'dbt build'
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  logs: # id of output
+    description: 'Logs from DBT job execution.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.command }}
