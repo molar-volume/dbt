@@ -6,7 +6,7 @@ IFS='
 '
 for command in $1
 do
-  echo "$command"
+  echo "Executing command: $command"
   eval "$command"
 done
 
