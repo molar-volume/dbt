@@ -1,4 +1,3 @@
 #!/bin/sh -l
-
-$1
-echo "time=$time" >> $GITHUB_OUTPUT
+cd $2
+$1 >> $GITHUB_OUTPUT
