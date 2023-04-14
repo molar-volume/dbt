@@ -1,4 +1,5 @@
-ARG RELEASE=snowflake:1.4.1
+ARG RELEASE=snowflake
+
 FROM ghcr.io/dbt-labs/dbt-${RELEASE}
 
 COPY entrypoint.sh /entrypoint.sh
