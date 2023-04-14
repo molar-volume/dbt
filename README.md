@@ -23,7 +23,7 @@ The time of execution.
 ```yaml
 uses: molar-volume/dbt@snowflake
 with:
-  command: |
+  commands: |
     dbt deps
     dbt test
     dbt seed
