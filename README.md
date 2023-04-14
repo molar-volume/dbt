@@ -28,4 +28,9 @@ with:
     dbt test
     dbt seed
     dbt run
+env:
+  account: ${{ secrets.SF_ACCOUNT }}
+  user: ${{ secrets.SF_USER }}
+  password: ${{ secrets.SF_PASS }}
+  role: sysadmin
 ```
