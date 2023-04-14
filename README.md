@@ -1,6 +1,6 @@
-# GitHub Action for DBT Snowflake
+# GitHub Action for DBT
 
-Runs DBT project on Snowflake.
+Runs DBT project.
 
 ## Inputs
 

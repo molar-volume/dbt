@@ -1,5 +1,5 @@
-name: 'dbt-snowflake'
-description: 'Runs DBT on Snowflake.'
+name: 'dbt'
+description: 'Runs DBT project.'
 inputs:
   command:  # id of input
     description: 'DBT commands to execute'
