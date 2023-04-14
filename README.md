@@ -21,7 +21,7 @@ The time of execution.
 ## Example usage
 
 ```yaml
-uses: molar-volume/dbt-snowflake@main
+uses: molar-volume/dbt@snowflake
 with:
   command: |
     dbt deps
