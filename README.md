@@ -1,6 +1,6 @@
 # GitHub Action for DBT
 
-Runs DBT project.
+Runs DBT project on the specified core: `uses: molar-volume/dbt@<core>`
 
 ## Inputs
 
