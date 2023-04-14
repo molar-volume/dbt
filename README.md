@@ -4,9 +4,9 @@ Runs DBT project.
 
 ## Inputs
 
-### `command`
+### `commands`
 
-**Required:** DBT command to run. Can be multi-line (see example). Default `"dbt build"`.
+**Required:** DBT commands to run. Can be multi-line (see example). Default `"dbt build"`.
 
 ### `project_folder`
 
