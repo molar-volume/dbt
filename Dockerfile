@@ -1,6 +1,6 @@
 # Container image that runs your code
-ARG CORE=snowflake
-FROM ghcr.io/dbt-labs/dbt-${CORE}:1.4.1
+ARG RELEASE=snowflake:1.4.1
+FROM ghcr.io/dbt-labs/dbt-${RELEASE}
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
