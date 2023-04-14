@@ -4,6 +4,7 @@ inputs:
   command:  # id of input
     description: 'DBT commands to execute'
     required: true
+    default: 'dbt build'
   project_folder:
     description: 'DBT project folder'
     required: false
