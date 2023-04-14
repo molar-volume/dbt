@@ -6,14 +6,3 @@ COPY entrypoint.sh /entrypoint.sh
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]
-
-##
-#  Generic dockerfile for dbt image building.
-#  See README for operational details
-##
-#
-#ARG DBT_VERSION=v1.3.0
-#FROM mwhitaker/dbt_all:${DBT_VERSION}
-#
-#COPY entrypoint.sh /entrypoint.sh
-#ENTRYPOINT [ "/entrypoint.sh" ]
