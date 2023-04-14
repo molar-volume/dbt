@@ -1,4 +1,4 @@
-ARG RELEASE=snowflake
+ARG RELEASE=postgres
 
 FROM ghcr.io/dbt-labs/dbt-${RELEASE}
 
